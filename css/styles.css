@@ -1,0 +1,20 @@
+@import url("./variables.css");
+@import url("./base.css");
+@import url("./layout.css");
+@import url("./components.css");
+@import url("./animations.css");
+
+/* Las secciones ocultas no deben ocupar espacio. */
+section[hidden] {
+  display: none !important;
+}
+
+/* Una sola sección ocupa todo el ancho disponible. */
+.content-layout > .panel:not([hidden]) {
+  grid-column: 1 / -1;
+}
+
+/* Evita espacio sobrante cuando solo se muestra el inicio. */
+.content-layout:has(> .panel:not([hidden])) {
+  margin-top: 2rem;
+}

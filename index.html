@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CV y portafolio de Reynaldo Rodrigo Mariaca Cutipa, estudiante de Ingeniería de Sistemas en La Paz, Bolivia."
+    />
+    <meta name="theme-color" content="#f5f7fc" />
+    <title>Rodrigo Mariaca | Portafolio</title>
+
+    <!-- styles.css centraliza la carga de los demás archivos CSS. -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script defer src="js/app.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="#inicio" aria-label="Rodrigo Mariaca, inicio">
+          <span class="brand-symbol" aria-hidden="true">RM.</span>
+          <span>Rodrigo<span class="brand-accent"> Mariaca</span></span>
+        </a>
+
+        <div class="header-actions">
+          <button
+            class="icon-button"
+            id="theme-button"
+            type="button"
+            aria-label="Activar modo oscuro"
+            aria-pressed="false"
+          >
+            <span id="theme-icon" aria-hidden="true">☾</span>
+          </button>
+
+          <button
+            class="icon-button hamburger"
+            id="menu-button"
+            type="button"
+            aria-label="Abrir menú de navegación"
+            aria-controls="main-navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav
+          class="navigation"
+          id="main-navigation"
+          aria-label="Navegación principal"
+        >
+          <ul>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#certificaciones">Cursos</a></li>
+            <li><a href="#idiomas">Idiomas</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+      <section class="hero container" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            Estudiante de Ingeniería de Sistemas
+          </p>
+
+          <h1 id="hero-title">
+            Hola, soy Rodrigo.<br />
+            <span>Ideas que se convierten en código.</span>
+          </h1>
+
+          <p class="hero-description">
+            Me interesa crear soluciones útiles a través del desarrollo de
+            software, el diseño web y las bases de datos. Aprendiendo,
+            construyendo y mejorando en cada proyecto.
+          </p>
+
+          <div class="button-row">
+            <a class="button button-primary" href="#proyectos">
+              Explorar proyectos <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-secondary" href="#contacto"> Contactar </a>
+          </div>
+
+          <ul class="hero-details">
+            <li>La Paz, Bolivia</li>
+            <li>Universidad Católica Boliviana</li>
+          </ul>
+        </div>
+
+        <aside class="profile-card" aria-labelledby="profile-name">
+          <span class="profile-label">MI PERFIL</span>
+
+          <img
+            class="profile-image"
+            src="assets/images/FotoPropia.jpg"
+            alt="Reynaldo Rodrigo Mariaca Cutipa"
+            width="240"
+            height="240"
+            fetchpriority="high"
+          />
+
+          <h2 id="profile-name">Reynaldo Rodrigo<br />Mariaca Cutipa</h2>
+          <p>Ingeniería de Sistemas · UCB</p>
+
+          <div class="tag-list" aria-label="Áreas de interés">
+            <span class="tag">Desarrollo web</span>
+            <span class="tag">Backend</span>
+            <span class="tag">Bases de datos</span>
+          </div>
+
+          <a class="profile-email" href="mailto:reynaldo.mariaca@ucb.edu.bo">
+            reynaldo.mariaca@ucb.edu.bo
+          </a>
+        </aside>
+      </section>
+
+      <div class="container content-layout">
+        <section class="panel" id="perfil" aria-labelledby="perfil-title">
+          <p class="eyebrow">01 / SOBRE MÍ</p>
+          <h2 id="perfil-title">Un poco sobre mi perfil</h2>
+
+          <p>
+            Soy estudiante de Ingeniería de Sistemas en la Universidad Católica
+            Boliviana “San Pablo”, sede La Paz. Me apasiona resolver problemas
+            mediante programación y estructurar información con bases de datos
+            relacionales.
+          </p>
+
+          <p>
+            Mis principales fortalezas son el pensamiento analítico, la
+            adaptación a nuevos lenguajes y el trabajo en equipo. Mi objetivo es
+            seguir desarrollando conocimientos en backend y construcción de
+            interfaces web accesibles.
+          </p>
+
+          <details class="details-box">
+            <summary>Mi enfoque de aprendizaje</summary>
+            <p>
+              Aprender mediante proyectos, organizar el código en módulos y
+              comprender cómo cada decisión afecta a las personas que utilizan
+              una aplicación.
+            </p>
+          </details>
+
+          <aside class="note" aria-label="Contexto académico">
+            Portafolio desarrollado para Tecnologías Web I · SIS-214.
+          </aside>
+        </section>
+
+        <section class="panel" id="educacion" aria-labelledby="educacion-title">
+          <p class="eyebrow">02 / FORMACIÓN</p>
+          <h2 id="educacion-title">Educación</h2>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <p class="item-meta">
+                <time datetime="2025">2025</time> — Actualidad
+              </p>
+              <h3>Ingeniería de Sistemas</h3>
+              <p>Universidad Católica Boliviana “San Pablo”</p>
+              <span class="tag">Licenciatura en curso</span>
+            </article>
+
+            <article class="timeline-item">
+              <p class="item-meta">
+                <time datetime="2021">2021</time> —
+                <time datetime="2024">2024</time>
+              </p>
+              <h3>Bachillerato Técnico Humanístico</h3>
+              <p>Instituto Domingo Savio “A”</p>
+              <span class="tag">Administración de Empresas</span>
+            </article>
+          </div>
+        </section>
+
+        <section
+          class="panel full-width"
+          id="experiencia"
+          aria-labelledby="experiencia-title"
+        >
+          <p class="eyebrow">03 / EXPERIENCIA ACADÉMICA</p>
+          <h2 id="experiencia-title">Aprender construyendo</h2>
+
+          <div class="cards-grid">
+            <article class="small-card">
+              <span class="card-number" aria-hidden="true">01</span>
+              <p class="item-meta">Agosto 2026 · Independiente</p>
+              <h3>Desarrollo y maquetación web</h3>
+              <p>
+                Construcción de un portafolio con HTML semántico, estilos
+                adaptativos y principios de accesibilidad.
+              </p>
+              <span class="tag">Portafolio Nativo</span>
+            </article>
+
+            <article class="small-card">
+              <span class="card-number" aria-hidden="true">02</span>
+              <p class="item-meta">Febrero — Marzo 2026 · UCB</p>
+              <h3>Arquitectura de datos</h3>
+              <p>
+                Modelado relacional de expedientes médicos y normalización de la
+                base de datos hasta 3FN.
+              </p>
+              <span class="tag">SaludDigital</span>
+            </article>
+
+            <article class="small-card">
+              <span class="card-number" aria-hidden="true">03</span>
+              <p class="item-meta">Abril 2026 · UCB</p>
+              <h3>Lógica de software</h3>
+              <p>
+                Modelado de clases y organización de algoritmos para un sistema
+                de transporte universitario.
+              </p>
+              <span class="tag">RouteMaster</span>
+            </article>
+          </div>
+        </section>
+
+        <section
+          class="panel full-width"
+          id="habilidades"
+          aria-labelledby="habilidades-title"
+        >
+          <p class="eyebrow">04 / HERRAMIENTAS</p>
+          <h2 id="habilidades-title">Habilidades técnicas</h2>
+
+          <div class="cards-grid">
+            <article class="small-card">
+              <h3>Lenguajes y tecnologías</h3>
+              <ul class="clean-list">
+                <li>HTML5 y CSS3</li>
+                <li>JavaScript</li>
+                <li>Java y JavaFX</li>
+                <li>C++</li>
+                <li>SQL · PostgreSQL / MySQL</li>
+              </ul>
+            </article>
+
+            <article class="small-card">
+              <h3>Entorno de desarrollo</h3>
+              <ul class="clean-list">
+                <li>Visual Studio Code</li>
+                <li>Git y GitHub Desktop</li>
+                <li>pgAdmin</li>
+                <li>MySQL Workbench</li>
+              </ul>
+            </article>
+
+            <article class="small-card">
+              <h3>Competencias</h3>
+              <ul class="clean-list">
+                <li>Modelado de datos</li>
+                <li>Normalización: 1FN, 2FN y 3FN</li>
+                <li>Pensamiento algorítmico</li>
+                <li>Trabajo colaborativo</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section
+          class="panel"
+          id="certificaciones"
+          aria-labelledby="certificaciones-title"
+        >
+          <p class="eyebrow">05 / APRENDIZAJE</p>
+          <h2 id="certificaciones-title">Certificaciones y cursos</h2>
+
+          <ul class="course-list">
+            <li>
+              <strong>Suficiencia en Inglés · B2</strong>
+              <span>Instituto StartSmart · 2022</span>
+            </li>
+            <li>
+              <strong>Técnico en Diseño Gráfico</strong>
+              <span>Instituto Técnico Columbia · 2023</span>
+            </li>
+            <li>
+              <strong>Tecnologías Web y Desarrollo Nativo</strong>
+              <span>Seminario · UCB · 2026</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="panel" id="idiomas" aria-labelledby="idiomas-title">
+          <p class="eyebrow">06 / COMUNICACIÓN</p>
+          <h2 id="idiomas-title">Idiomas</h2>
+
+          <div
+            class="table-wrapper"
+            role="region"
+            aria-label="Tabla de idiomas"
+            tabindex="0"
+          >
+            <table>
+              <caption>
+                Niveles de dominio por habilidad
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Idioma</th>
+                  <th scope="col">Lectura</th>
+                  <th scope="col">Escritura</th>
+                  <th scope="col">Conversación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Español</th>
+                  <td>Avanzado</td>
+                  <td>Avanzado</td>
+                  <td>Nativo</td>
+                </tr>
+                <tr>
+                  <th scope="row">Inglés</th>
+                  <td>Intermedio</td>
+                  <td>Intermedio</td>
+                  <td>Básico</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section
+          class="panel full-width"
+          id="proyectos"
+          aria-labelledby="proyectos-title"
+        >
+          <p class="eyebrow">07 / PORTAFOLIO</p>
+          <h2 id="proyectos-title">Proyectos destacados</h2>
+          <p>Una selección de proyectos y las tecnologías que los acompañan.</p>
+
+          <div class="search-field">
+            <label for="project-search">Buscar por proyecto o tecnología</label>
+            <input
+              id="project-search"
+              type="search"
+              placeholder="Prueba con Java, SQL o portafolio…"
+              aria-controls="project-list"
+              autocomplete="off"
+            />
+          </div>
+
+          <p id="project-count" class="item-meta" role="status"></p>
+          <div id="project-list" class="cards-grid"></div>
+
+          <noscript>
+            <p>Activa JavaScript para consultar y filtrar los proyectos.</p>
+          </noscript>
+        </section>
+
+        <section
+          class="panel full-width"
+          id="github"
+          aria-labelledby="github-title"
+        >
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">08 / CÓDIGO EN LÍNEA</p>
+              <h2 id="github-title">Repositorios de GitHub</h2>
+            </div>
+            <button
+              class="button button-secondary"
+              id="github-button"
+              type="button"
+            >
+              Cargar repositorios ↗
+            </button>
+          </div>
+
+          <p>
+            Mis repositorios públicos más recientes, consultados desde GitHub.
+          </p>
+          <p id="github-status" class="feedback" role="status"></p>
+          <div id="github-list" class="cards-grid" aria-busy="false"></div>
+        </section>
+
+        <section
+          class="panel full-width"
+          id="multimedia"
+          aria-labelledby="multimedia-title"
+        >
+          <p class="eyebrow">09 / EN ACCIÓN</p>
+          <h2 id="multimedia-title">Portafolio multimedia</h2>
+
+          <div class="media-grid">
+            <figure class="media-card">
+              <img
+                src="assets/images/proyecto.svg"
+                alt="Diagrama del proyecto SaludDigital"
+                loading="lazy"
+              />
+              <figcaption>Diseño de datos · SaludDigital</figcaption>
+            </figure>
+
+            <div class="media-stack">
+              <figure class="media-card">
+                <figcaption>Presentación personal</figcaption>
+                <audio
+                  controls
+                  preload="none"
+                  aria-label="Presentación personal"
+                >
+                  <source
+                    src="assets/audios/presentacion.mp3"
+                    type="audio/mpeg"
+                  />
+                  Tu navegador no permite reproducir este audio.
+                </audio>
+              </figure>
+
+              <figure class="media-card">
+                <figcaption>Demostración del proyecto</figcaption>
+                <video
+                  controls
+                  preload="none"
+                  aria-label="Demostración del proyecto"
+                >
+                  <source
+                    src="assets/videos/presentacion.mp4"
+                    type="video/mp4"
+                  />
+                  Tu navegador no permite reproducir este video.
+                </video>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="panel full-width"
+          id="contacto"
+          aria-labelledby="contacto-title"
+        >
+          <div class="contact-layout">
+            <div class="contact-copy">
+              <p class="eyebrow">10 / CONECTEMOS</p>
+              <h2 id="contacto-title">¿Tienes una idea?<br />Hablemos.</h2>
+              <p>
+                Para conversar sobre proyectos, aprendizaje o colaboración,
+                puedes enviarme un mensaje.
+              </p>
+
+              <address>
+                <a href="mailto:reynaldo.mariaca@ucb.edu.bo">
+                  reynaldo.mariaca@ucb.edu.bo
+                </a>
+                <a href="tel:+59167344081">+591 67344081</a>
+                <span>La Paz, Bolivia</span>
+              </address>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <fieldset id="contact-fields">
+                <legend>Envía tu mensaje</legend>
+                <p class="form-hint">Todos los campos son obligatorios.</p>
+
+                <div class="field">
+                  <label for="name">Nombre completo</label>
+                  <input
+                    id="name"
+                    name="from_name"
+                    type="text"
+                    autocomplete="name"
+                    required
+                    minlength="3"
+                    maxlength="80"
+                    aria-describedby="name-error"
+                  />
+                  <small id="name-error" class="field-message"></small>
+                </div>
+
+                <div class="field">
+                  <label for="email">Correo electrónico</label>
+                  <input
+                    id="email"
+                    name="reply_to"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    maxlength="120"
+                    aria-describedby="email-error"
+                  />
+                  <small id="email-error" class="field-message"></small>
+                </div>
+
+                <div class="field">
+                  <label for="subject">Asunto</label>
+                  <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    required
+                    minlength="5"
+                    maxlength="120"
+                    aria-describedby="subject-error"
+                  />
+                  <small id="subject-error" class="field-message"></small>
+                </div>
+
+                <div class="field">
+                  <label for="message">Mensaje</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    minlength="20"
+                    maxlength="2000"
+                    aria-describedby="message-error"
+                  ></textarea>
+                  <small id="message-error" class="field-message"></small>
+                </div>
+
+                <button
+                  class="button button-primary"
+                  id="send-button"
+                  type="submit"
+                >
+                  Enviar mensaje ↗
+                </button>
+              </fieldset>
+
+              <p id="form-status" class="feedback" role="status"></p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year">2026</span> Rodrigo Mariaca.</p>
+      <p>Diseñado con intención. Construido con código.</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </footer>
+  </body>
+</html>
